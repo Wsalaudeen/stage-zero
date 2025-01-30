@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="card" role="region" aria-labelledby="profile-name">
+        <figure>
+          <img
+            src="./images/profile picture.jpg"
+            alt="Profile picture of Lanre"
+            data-testid="profilePicture"
+            class="natural-dimenision"
+          />
+        </figure>
+        <header>
+          <h2 id="profile-name" data-testid="fullName">Salaudeen Olanrewaju</h2>
+          <h4 data-testid="jobTitle">Front-End Developer</h4>
+        </header>
+        <article>
+          <p data-testid="shortBio">
+            Passionate front-end developer with experience in building
+            responsive, accessible and user-friendly applications.
+          </p>
+        </article>
+        <footer>
+          <p data-testid="currentLocation">Ibadan,Oyo state, Nigeria.</p>
+          <p data-testid="emailAddress">
+            <a href="mailto:salaudeenwarees9@gmail.com"
+              >salaudeenwarees9@gmail.com</a
+            >
+          </p>
+          <nav class="social-links" data-testid="socialLinks">
+            <a
+              href="https://www.linkedin.com/in/salaudeen-olanrewaju-w/"
+              target="_blank"
+              aria-label="LinkedIn profile"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/Wsalaudeen"
+              target="_blank"
+              aria-label="GitHub profile"
+              >GitHub</a
+            >
+            <a
+              href="https://x.com/w_salaudeen"
+              target="_blank"
+              aria-label="Twitter profile"
+              >Twitter</a
+            >
+          </nav>
+          <p id="utc-time" data-testid="currentTimeUTC" aria-live="polite"></p>
+        </footer>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

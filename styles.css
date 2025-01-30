@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h2,
+h4 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h2,
+h4 {
+  text-wrap: balance;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: "Tajawal", serif;
+}
+
+/* card styling */
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+
+  & img {
+    object-fit: cover;
+  }
+}
+
+/* image natural dimension size */
+.natural-dimension {
+  width: 340px;
+  height: 300px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1b1b1e;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+}
+/* links styling */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  & a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #0073b1;
+  }
+
+  &:focus,
+  :hover {
+    text-decoration: underline;
+  }
+}
+
+/* figure styling */
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+}
