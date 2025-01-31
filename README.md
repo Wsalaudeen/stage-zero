@@ -28,7 +28,10 @@ Clone the repository: git clone https://github.com/your-username/responsive-prof
 Open index.html in a browser to view the profile card.
 
 File Structure: responsive-profile-card/
-│── index.html    # Main HTML file
-│── profile.jpg   # Profile picture
-│── README.md     # Project documentation
+│── index.html # Main HTML file
+│── profile.jpg # Profile picture
+│── README.md # Project documentation
 
+TO RUN THE TEST
+
+node tests/profile_card_test.js
